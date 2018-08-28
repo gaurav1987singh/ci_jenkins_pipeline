@@ -3,7 +3,7 @@ def test='mytest'
 node {
 stage('build'){
 echo "Hello from build task"
-helloFromSharedLibrary()
+helloFromSharedLibrary(WORKSPACE)
 echo "HOLA"
     }
 stage('unitTest'){
