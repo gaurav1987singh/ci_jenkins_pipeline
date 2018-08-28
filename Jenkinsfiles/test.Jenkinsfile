@@ -4,6 +4,7 @@ node {
 stage('build'){
 echo "Hello from build task"
 helloFromShared_Library(greetings)
+echo "HOLA"
     }
 stage('unitTest'){
 echo "Hello from unit task"
