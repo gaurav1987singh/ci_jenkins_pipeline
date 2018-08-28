@@ -1,11 +1,13 @@
+@Library('my-shared-libraries') _
 def test='mytest'
 node {
 stage('build'){
 echo "Hello from build task"
-gradle build -x test
+helloFromShared_Library(greetings)
     }
 stage('unitTest'){
 echo "Hello from unit task"
+
      }
 stage('deploy'){
 echo "Hello from deploy task"
