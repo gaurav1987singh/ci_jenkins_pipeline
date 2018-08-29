@@ -1,7 +1,7 @@
 @Library('my-shared-libraries') _
 def test='mytest'
 def properties
-def serviceNameRepoUrlKey = "${generateRepoUrlKeyFromServiceName(SERVICE_NAME)}RepoUrl"
+def serviceNameRepoUrlKey = "${SERVICE_NAME}"
 node {
 stage('checkout'){
 checkoutRepo(BRANCH, properties[serviceNameRepoUrlKey])
