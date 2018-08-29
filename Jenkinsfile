@@ -3,6 +3,11 @@ def test='mytest'
 def properties
 def serviceNameRepoUrlKey = "${SERVICE_NAME}"
 node {
+properties=loadProperties()
+
+echo "The serviceNameRepoUrlKey: ${serviceNameRepoUrlKey}"
+echo "Properties value: ${properties}"
+
 stage('checkout'){
 checkoutRepo(BRANCH, properties[serviceNameRepoUrlKey])
 }
