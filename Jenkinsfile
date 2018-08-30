@@ -1,7 +1,7 @@
 @Library('my-shared-libraries') _
 def test='mytest'
 def properties
-def serviceNameRepoUrlKey = "${SERVICE_NAME}"
+def serviceNameRepoUrlKey = "${SERVICE_NAME}RepoUrl"
 node {
 properties=loadProperties()
 
