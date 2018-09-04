@@ -22,4 +22,8 @@ echo "Hello from unit task"
 stage('deploy'){
 echo "Hello from deploy task"
   }
+
+ stage('Build_Number'){
+evenOrOdd(currentBuild.getNumber())
+ }
 }
